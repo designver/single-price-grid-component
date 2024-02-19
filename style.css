@@ -1,0 +1,191 @@
+/* ----- RESET ----- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ----- STYLING ----- */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  width: 19.4375rem;
+  box-shadow: 0 15px 30px hsla(212, 100%, 33%, 14.88%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-item-1 {
+  background-color: #fff;
+  color: hsl(218, 22%, 67%);
+  padding: 1.75rem 1.5rem 2rem 1.5rem;
+}
+
+.grid-item-1 h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  letter-spacing: -0.0156rem;
+}
+
+.guarantee {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0119rem;
+  color: hsl(71, 73%, 54%);
+  margin: 1.5rem 0 1rem 0;
+}
+
+.desc {
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0106rem;
+}
+
+.grid-item-2,
+.grid-item-3 {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0138rem;
+}
+.price-item {
+  margin-top: 1.125rem;
+  margin-bottom: 0.5625rem;
+
+  display: flex;
+  column-gap: 0.6875rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4;
+}
+
+.per,
+.grid-item-2 p {
+  line-height: 26px;
+  letter-spacing: -0.0125rem;
+}
+
+.per {
+  color: hsl(204, 43%, 93%);
+}
+
+.sign-up {
+  padding: 0.9375rem 6.375rem 0.875rem 6.375rem;
+  margin-top: 1.625rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.117);
+}
+
+.grid-item-3 {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+.grid-item-3 ul {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0106rem;
+  list-style-type: none;
+  color: hsl(204, 43%, 93%);
+  margin-top: 1.125rem;
+  margin-left: -2.5rem;
+}
+
+@media (min-width: 39.6875em) {
+  .container {
+    width: 39.6875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item-1 {
+    grid-column: 1 / -1;
+    padding: 2.5rem;
+  }
+
+  .grid-item-1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .guarantee {
+    font-size: 1.125rem;
+    letter-spacing: -0.0138rem;
+    margin: 1.5rem 0 0.6875rem 0;
+  }
+
+  .desc {
+    font-size: 1rem;
+    letter-spacing: -0.0125rem;
+  }
+
+  .grid-item-2,
+  .grid-item-3 {
+    padding: 2.5rem;
+  }
+
+  .sign-up {
+    padding: 0.9375rem 5.5625rem 0.875rem 5.5625rem;
+  }
+}
