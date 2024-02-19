@@ -6,7 +6,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.png)
+![](./images/screenshot2.png)
 
 ## Author
 
